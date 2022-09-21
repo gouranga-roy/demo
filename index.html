@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="fontawesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wraper">
+    <div class="container">
+      <div class="list-item">
+        <ul>
+          <li>
+            <input type="radio" id="input1" name="radio">
+            <label for="input1">Abilita pulsonte chiamata</label>
+          </li>
+          <li>
+            <input type="radio" id="input2" name="radio">
+            <label for="input2">Abilita pulsonte whatsapp</label>
+          </li>
+          <li>
+            <input type="radio" id="input3" name="radio" id="input3">
+            <label id="input3" for="input3">Abilita pulsonte video chiamata</label>
+          </li>
+        </ul>
+      </div>
+      <a href="https://wa.me/08801755375388">
+        <div class="app-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+  <script src="jquery-3.6.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#input3').click(function(){
+        $('.app-icon').show();
+      });
+    });
+  </script>
+</body>
+</html>
